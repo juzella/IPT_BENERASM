@@ -1,0 +1,183 @@
+
+        
+        body
+         {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f8f1e4;
+            color: #ffffff;
+        }
+        
+
+        #calculator {
+            background-color: #2a2a2a;
+            border-radius: 16px;
+            padding: 20px;
+            width: 100%;
+            max-width: 360px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        #calculator h2 {
+            font-size: 1.5em;
+            color: #e8e8e8;
+            margin-bottom: 1em;
+        }
+
+        input[type="number"] {
+            width: 48%;
+            padding: 12px;
+            margin: 8px 1%;
+            border: 1px solid #444;
+            border-radius: 8px;
+            outline: none;
+            font-size: 1em;
+            color: #f0f0f0;
+            background-color: #3a3a3a;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input[type="number"]:focus {
+            border-color: #4a90e2;
+        }
+
+        button {
+            background-color: #000000;
+            color: #f0f0f0;
+            border: none;
+            padding: 12px 20px;
+            margin: 8px 4px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #000000;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #f0f0f0;
+            background-color: #000000;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .font-button {
+            background-color: #444;
+            color: #fffdfd;
+            padding: 10px 16px;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 0.9em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .font-button:hover {
+            background-color: #ce3535;
+        }
+        .navbar {
+    background-color: #d2b48c;
+    padding: 15px;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #4d3b28;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #e0c8a4;
+}
+
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px);
+    padding-top: 60px; 
+}
+
+
+.left-section {
+    background-color: #f0e2d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    border: 5px solid #dbc19f;
+    overflow: hidden;
+    position: relative; 
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+.profile-image:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.profile-image:hover img {
+    filter: grayscale(50%);
+    transition: filter 0.3s ease; 
+}
+
+
+.right-section {
+    flex: 2;
+    background-color: #f8f1e4;
+    padding: 30px;
+    text-align: left;
+}
+
+.right-section h2 {
+    color: #4d3b28;
+    font-size: 100px;
+    margin-bottom: 40px;
+    font-family: cursive;
+    text-align: center;
+}
+
